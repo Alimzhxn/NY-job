@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li, a{
+    font-family: "Poppins", serif;
+    font-weight: 150px;
+    font-style: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-image: url(../suretter/backimg.jpg);
+    box-shadow: 5px 51px 85px -14px rgba(34, 60, 80, 0.6);
+    
+}
+
+header{
+    background-color: rgb(23, 74, 136);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+    color: #73e1eb;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 5px 51px 85px -14px rgba(34, 60, 80, 0.6);
+}
+
+.logo{
+    cursor: pointer;
+    width: 60px;
+    background-color: transparent;
+}
+
+video{
+    width: 100%;
+    background-size: cover;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    background-color: transparent;
+}
+
+.nav-links li{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    align-content: center;
+}
+
+.nav-links li a{
+    transition: 0.3s;
+    color: white;
+}
+
+.nav-links li a:hover{
+    color: #5bc5ff;
+    font-size: 1.2rem;
+}
+
+button{
+    background-color: #37b6f6;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+button:hover{
+    background-color: #94f3ff;
+}
+
+.p-words{
+    background-color: transparent;
+    padding: 20px;
+    transition: 0.3s;
+    color: white;
+}
+
+.p-words:hover{
+    font-size: 1.2rem;
+}
+
+.ny-time{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #4da6ff;
+    font-size: 16px;
+    cursor: pointer;
+    transition:0.3s, color 0.3s;
+}
+
+.ny-time:hover{
+    background: #ffcccc;
+    color: #fff;
+}
+
+.jana1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content{
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 200px;
+    text-align: center;
+    justify-content: center;
+}
+
+.content{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    color: white;
+}
+
+.timer{
+    justify-content: center;
+    text-align: center;
+}
+
+/* phone */
+@media (max-width: 768px) {
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: #ff6666;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links{
+        display: flex;
+    }
+}
